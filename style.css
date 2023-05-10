@@ -2,21 +2,44 @@
   margin: 200px;
   height: 700px;
   display: grid;
-  grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr;
-  /* grid-template-columns: 1fr 1fr 1fr */
-  /* grid-template-columns: 200px 1fr */
-  /* grid-template-columns: 100px 200px auto */
-
-  /* grid-template-rows: 1fr 1fr 1fr */
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(11, 1fr);
-  /* grid-template-rows: 200px 1fr */
-  /* grid-template-rows: 100px 200px auto */
   border: solid black;
+  box-sizing: border-box;
 }
+
+input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  transition: 0.5s;
+}
+input:checked {
+  border: none;
+  margin: 0;
+  background: palegreen;
+  transition: 0.5s;
+}
+.b {
+  padding: 10px;
+}
+.c {
+  display: flex;
+}
+p {
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
 .a {
   border: solid black;
   text-align: center;
   font-size: 30px;
+  justify-content: center;
 }
 h2 {
   text-align: center;
